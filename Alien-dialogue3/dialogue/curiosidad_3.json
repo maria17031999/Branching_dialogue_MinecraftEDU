@@ -1,0 +1,89 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag":"curiosidad_3",
+                "npc_name":"curiosidad",
+                "text":"¡A investigar!",
+                "buttons":[
+                    {
+                        "name":"E1",
+                        "commands":[
+                            "/say Queremos hacer panes con el trigo cultivado y que no sobre ningún trigo. ¿Podéis encontrar una forma de que el agua riegue a los cultivos justos para que no sobre ningún trigo cuando hagamos pan y a la vez sea máximo? ¿Cuántas formas podéis encontrar? ¿Son únicas? Demostradlo."
+                        ]
+                    },
+                    {  
+                        "name":"E2",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_ce2"
+                        ] 
+                    },
+                    {  
+                        "name":"E3",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_ce3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_ce2",
+                "npc_name":"curiosidad",
+                "text":"Estamos haciendo mejoras para futuras exploraciones. ¿Nos podríais ayudar? Queremos saber de qué dimensiones necesitamos hacer la sala la próxima vez para maximizar el agua. ",
+                "buttons":[
+                    {
+                        "name":"Q1",
+                        "commands":[
+                            "/say ¿Cuál sería la dimensión si tenemos un cubo de agua? "
+                        ]
+                    },
+                    {
+                        "name":"Q2",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_ce2_ayuda"
+                        ]
+                    },
+                    {
+                        "name":"Q3",
+                        "commands":[
+                            "/say Piensa ahora en las dimensiones de las salas cuadradas que has visto en la pregunta anterior, ¿ves alguna regularidad?"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_ce3",
+                "npc_name":"curiosidad",
+                "text":"¡A investigar! No sé si os habéis dado cuenta... pero ¡las distancias no concuerdan! En Minecraft tenemos otro tipo de distancia... nada más y nada menos que ¡métrica máxima! Pero, ¿en qué se diferencia? Vamos a ver...",
+                "buttons":[
+                    {
+                        "name":"Q1",
+                        "commands":[
+                            "/say Calculad, con el Teorema de Pitágoras la diagonal de la sala óptima (con un cubo de agua) que habéis hecho en el enunciado 1 (o id a la sala de cultivos). Para ello, necesitáis saber que los bloques de Minecraft son de 1m^3. Compara la distancia que sale con las distancias vertical y horizontal. ¿Qué observas?"
+                        ]
+                    },
+                    {
+                        "name":"Q2",
+                        "commands":[
+                            "/say ¿Qué pasaría si la máxima distancia de riego fuese la diagonal? ¿Pasa esto en Minecraft ?¿Se os ocurre de qué forma se podrían medir las distancias en Minecraft si no es como lo hacemos usualmente?"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_ce2_ayuda",
+                "npc_name":"curiosidad",
+                "text":"Queremos que las salas sean cuadradas porque preferimos construir bloques a construir prismas… ¿cuántos cubos de agua tendremos que utilizar para maximizar el cultivo y que las salas sigan siendo cuadradas?",
+                "buttons":[
+                    {
+                        "name":"Ayuda",
+                        "commands":[
+                            "/say Piensa primero en cuál es el máximo de alimentos que puedes regar con un cubo de agua. Piensa ahora cuántos con 2, ¿es posible hacer un cuadrado maximizando el cultivo? ¿Y con 3? ¿Y con 4? ¿Y con 9? ¿Y con 16? ¿Ves alguna regularidad sobre los cubos utilizados y las salas cuadradas?"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

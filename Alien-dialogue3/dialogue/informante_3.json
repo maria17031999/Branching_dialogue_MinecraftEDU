@@ -1,0 +1,383 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag":"informante_3",
+                "npc_name":"sabiduria",
+                "text":"¡Aquí están los retos!",
+                "buttons":[
+                    {
+                        "name":"Inv",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_inv"
+                        ]
+                    },
+                    {  
+                        "name":"E1",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e1"
+                        ] 
+                    },
+                    {  
+                        "name":"E2",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e2"
+                        ]
+                    },
+                    {  
+                        "name":"E3",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e3"
+                        ]
+                    },
+                    {  
+                        "name":"E4",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e4"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_inv",
+                "npc_name":"sabiduria",
+                "text":"Antes de plantear los problemas debemos entender cómo funciona el riego. Id a la sala de experimentación e investigad de qué forma podemos optimizar el agua para que llegue al máximo número de cultivos. Todo lo que necesitáis saber está en la pizarra de la sala central. Después de la investigación responded:",
+                "buttons":[
+                    {
+                        "name":"Q1",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_inv1"
+                        ]
+                    },
+                    {
+                        "name":"Q2",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_inv2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_inv1",
+                "npc_name":"sabiduria",
+                "text":"¿A qué distancia llega el agua de forma vertical, horizontal y diagonal?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_inv2",
+                "npc_name":"sabiduria",
+                "text":"¿A qué cantidad de cuadrados riega el bloque de agua en total?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e1",
+                "npc_name":"sabiduria",
+                "text":"22Pronto nos quedaremos sin alimento. Necesitamos cultivar esta sala de trigo. En los cofres disponéis de semillas de este alimento. El problema es que no disponemos de demasiada agua. Sólo podréis utilizar un cubo de agua.",
+                "buttons":[
+                    {
+                        "name":"Q1",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e11"
+                        ]
+                    },
+                    {
+                        "name":"Q2",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e12"
+                        ]
+                    },
+                    {
+                        "name":"Q3",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e13"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e11",
+                "npc_name":"sabiduria",
+                "text":"¿Dónde debemos poner el agua para que pueda crecer el máximo posible de trigo?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e12",
+                "npc_name":"sabiduria",
+                "text":"¿Ese bloque de agua riega a 80 unidades de trigo? Si es que no, ¿a cuántos riega?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e13",
+                "npc_name":"sabiduria",
+                "text":"¿Dónde es mejor cultivar si sólo tenemos un cubo, aquí o en la sala de experimentos?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e2",
+                "npc_name":"sabiduria",
+                "text":"¡Buenas noticias! Tenemos un cubo más de agua (es decir, disponemos de dos cubos de agua).",
+                "buttons":[
+                    {
+                        "name":"Q1",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e21"
+                        ]
+                    },
+                    {
+                        "name":"Q2",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e22"
+                        ]
+                    },
+                    {
+                        "name":"Q3",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e23"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e21",
+                "npc_name":"sabiduria",
+                "text":"¿Es posible regar toda la sala?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e22",
+                "npc_name":"sabiduria",
+                "text":"Tanto si es posible como si no, ¿existe más de una forma para regar el máximo de cultivos posibles?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e23",
+                "npc_name":"sabiduria",
+                "text":"Si es así, ¿de cuántas formas se pueden poner los dos cubos para regar el máximo de cultivos?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e3",
+                "npc_name":"sabiduria",
+                "text":"Nos ha llegado un envío desde la Tierra. ¡Ahora tenemos calabazas! Pero hay un problema... las calabazas necesitan un hueco para crecer.",
+                "buttons":[
+                    {
+                        "name":"Q1",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e31"
+                        ]
+                    },
+                    {
+                        "name":"Q2",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e32"
+                        ]
+                    },
+                    {
+                        "name":"Q3",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e33"
+                        ]
+                    },
+                    {
+                        "name":"Q4",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e34"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e31",
+                "npc_name":"sabiduria",
+                "text":"¿Cómo deberíamos cultivar las calabazas para obtener la máxima producción posible y que todas tengan al menos un hueco para crecer?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e32",
+                "npc_name":"sabiduria",
+                "text":"¿Y si queremos que todas las calabazas tengan por lo menos 2 huecos para crecer?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e33",
+                "npc_name":"sabiduria",
+                "text":"Si las calabazas también pudiesen crecer en los huecos colindantes de forma diagonal, ¿se te ocurre otra forma de cultivarlas para que, por lo menos, tengan 2 huecos para crecer?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e34",
+                "npc_name":"sabiduria",
+                "text":"Cuando la barra de alimento está vacía, la salud de quien juega disminuye al ritmo de medio corazón cada 4 segundos.  Con cuatro barras de pan se restablece la barra del hambre entera y con la tarta de calabaza se recuperan 4 puntos de hambre. ¿Qué es mejor cultivar?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e4",
+                "npc_name":"sabiduria",
+                "text":"Queremos que la base en la que estamos ahora mismo sea habitable. Cada hora de clase podemos obtener suministros de la Tierra. Pero nos hará falta una estimación del pedido. ",
+                "buttons":[
+                    {
+                        "name":"Q1",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e41"
+                        ]
+                    },
+                    {
+                        "name":"Q2",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e42"
+                        ]
+                    },
+                    {
+                        "name":"Q3",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e43"
+                        ]
+                    },
+                    {
+                        "name":"Q4",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_e44"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e41",
+                "npc_name":"sabiduria",
+                "text":"¿Qué deberemos tener en cuenta para hacer la estimación?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e42",
+                "npc_name":"sabiduria",
+                "text":"En esa hora tenemos que salir a hacer una exploración. Cuando corremos la barra del hambre disminuye 0.1 por metro recorrido y cuando andamos el hambre disminuye 0.01 por metro recorrido. ¿Es suficiente con la sala de cultivos o necesitamos más capacidad de cultivo?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e43",
+                "npc_name":"sabiduria",
+                "text":"¿Qué pasaría si perdemos la conexión con la Tierra durante veinte horas?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_e44",
+                "npc_name":"sabiduria",
+                "text":"¿Qué pasaría si doblamos la tripulación?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

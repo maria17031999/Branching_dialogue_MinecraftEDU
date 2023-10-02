@@ -1,0 +1,103 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag":"ayudante_3",
+                "npc_name":"comprensión",
+                "text":"Os puedo ayudar…",
+                "buttons":[
+                    {
+                        "name":"Ayuda E1",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_ayuda1"
+                        ]
+                    },
+                    {  
+                        "name":"Ayuda E2",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2"
+                        ] 
+                    },
+                    {  
+                        "name":"Ayuda E3",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_ayuda3"
+                        ]
+                    },
+                    {  
+                        "name":"Ayuda E4",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_ayuda4"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2",
+                "npc_name":"comprensión",
+                "text":"Pensad en donde pusisteis el bloque de agua en la en el enunciado 1. Ponedlo un bloque arriba. Fijaos en la zona a la que riega. ¿Es diferente a la anterior? ¿En qué? ¿Qué pasa si lo pones a la izquierda? ¿Y a la derecha? ¿Y abajo?",
+                "buttons":[
+                    {
+                        "name":"Más ayuda",
+                        "commands":[
+                            "/dialogue open @e[type=npc,c=1] @initiator scene2_ayuda2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_ayuda1",
+                "npc_name":"comprensión",
+                "text":"Recordad a qué distancia llegaba el cubo de agua en la sala de experimentos de forma vertical, horizontal y diagonalmente.",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_ayuda2",
+                "npc_name":"comprensión",
+                "text":"Pensad en donde pusisteis el bloque de agua en el enunciado 1. Ponedlo arriba y a la izquierda. ¿A qué zona riega? Pensadlo en otras direcciones combinadas.",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_ayuda3",
+                "npc_name":"comprensión",
+                "text":"Pensad en el enunciado 1… ¿qué modificación haríais en los cultivos para que haya huecos?",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag":"scene2_ayuda4",
+                "npc_name":"comprensión",
+                "text":"Para hacer la estimación debéis pensar de qué forma perdéis y ganáis vida en el juego.",
+                "buttons":[
+                    {
+                        "name":"Fin",
+                        "commands":[
+                            "/say "
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

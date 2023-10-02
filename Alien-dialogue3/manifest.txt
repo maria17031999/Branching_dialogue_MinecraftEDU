@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Alien 3",
+    "name": "Alien 3",
+    "uuid":"",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 16, 0]
+  },
+  "modules": [
+    {
+      "description": "Alien 3",
+      "type": "data",
+      "uuid": "",
+      "version": [1, 0, 0]
+    }
+  ]
+}
