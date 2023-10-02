@@ -3,7 +3,7 @@
   "header": {
     "description": "Alien 3",
     "name": "Alien 3",
-    "uuid":"b0f68bfa-4e5c-4b35-b919-345adb506fd2",
+    "uuid":"",
     "version": [1, 0, 0],
     "min_engine_version": [1, 16, 0]
   },
@@ -11,7 +11,7 @@
     {
       "description": "Alien 3",
       "type": "data",
-      "uuid": "44ed5610-f8e5-45c0-a9a0-b838971e483f",
+      "uuid": "",
       "version": [1, 0, 0]
     }
   ]
